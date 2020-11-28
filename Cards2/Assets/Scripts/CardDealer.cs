@@ -17,10 +17,10 @@ public class CardDealer : MonoBehaviour
 
     }
 
- 
+
 
     // Update is called once per frame
-    private  void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -46,8 +46,9 @@ public class CardDealer : MonoBehaviour
         {
             Debug.Log($"{card.CardSuit}:{card.Number}");
         }
+       
+        }
 
-        
+    
 
-    }
 }
