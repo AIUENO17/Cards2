@@ -8,14 +8,7 @@ public class CPUHand : MonoBehaviour
     [SerializeField] private List<RectTransform> m_cpuCards = new List<RectTransform>();
     private List<Card> m_cpuHand = new List<Card>();
     
-    // Start is called before the first frame update
-   private  void Start()
-    {
-        m_cardDler.CardDeal(m_cpuHand);
-        CardUpDate();
-    }
-
-    // Update is called once per frame
+ 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -30,5 +23,10 @@ public class CPUHand : MonoBehaviour
             var card = m_cpuHand[i];
             m_cpuCards[i].GetComponentInChildren<TextMeshProUGUI>().text = $"{card.CardSuit}:{card.Number}";
         }
+    }
+    public void CPUcardDeal()
+    {
+        m_cardDler.CardDeal(m_cpuHand);
+        CardUpDate();
     }
 }

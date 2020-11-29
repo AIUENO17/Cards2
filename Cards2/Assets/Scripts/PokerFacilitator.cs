@@ -25,6 +25,30 @@ public class PokerFacilitator : MonoBehaviour
     
     void Update()
     {
-        
+        switch (m_gameState)
+        {
+            case GameState.Invalid:
+                m_gameState = GameState.Init;
+                    break;
+            case GameState.Init:
+                m_gameState = GameState.Deal;
+                break;
+            
+
+                
+                
+            case GameState.Change:
+                if (ChangeCount < 1)
+                {
+                    m_gameState = GameState.Judge;
+                }
+                break;
+         
+                
+
+            case GameState.Result:
+                break;
+   
+        }
     }
 }
