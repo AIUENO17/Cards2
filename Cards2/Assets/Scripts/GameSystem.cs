@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameSystem : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void SetActive()
+    public void StartGame()
     {
         SceneManager.LoadScene("Game");
 

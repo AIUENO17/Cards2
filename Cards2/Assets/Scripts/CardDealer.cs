@@ -20,25 +20,21 @@ public class CardDealer : MonoBehaviour
 
 
     // Update is called once per frame
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            CardDeal();
-        }
-    }
+ 
 
-    public void CardDeal()
+   
+
+    public void CardDeal(List<Card> playerHand)
     {
         playerHand.Clear();
 
-        if (deck.Count < 2)
+        if (deck.Count < 1)
         {
             deck.Clear();
             deck = Deck.ShuffleDeck(Deck.GetDeck());
         }
 
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 1; i++)
         {
             playerHand.Add(Deck.GetCard(deck));
         }
