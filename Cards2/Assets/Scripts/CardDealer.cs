@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CardDealer : MonoBehaviour
@@ -16,14 +17,28 @@ public class CardDealer : MonoBehaviour
         deck = Deck.ShuffleDeck(Deck.GetDeck());
 
     }
+    private void Awake()
+    {
+        GameStart();
+    }
 
+    public List<Card> GetPlayerDeck()
+    {
+        var playerDeck = deck.Where((c, i) => i % 2 != 0).ToList();
+        return playerDeck;
+    }
 
+    public List<Card> GetCPUDeck()
+    {
+        var cpuDeck = deck.Where((c, i) => i % 2 == 0).ToList();
+        return cpuDeck;
+    }
 
-    // Update is called once per frame
- 
-
-   
-
+    public void GameStart()
+    {
+        deck = Deck.GetDeck();
+        deck = Deck.ShuffleDeck(deck);
+    }
     public void CardDeal(List<Card> playerHand)
     {
         playerHand.Clear();
@@ -42,9 +57,7 @@ public class CardDealer : MonoBehaviour
         {
             Debug.Log($"{card.CardSuit}:{card.Number}");
         }
-       
-        }
 
-    
-
+        
+    }
 }
