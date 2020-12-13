@@ -241,6 +241,8 @@ MonoBehaviour:
   m_cardDlealer: {fileID: 519420030}
   m_playerCards:
   - {fileID: 4163584462281798185}
+  m_cardAtlas: {fileID: 4343727234628468602, guid: 5a1eb8324362512408258d62e298233f,
+    type: 2}
 --- !u!114 &109596806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -626,6 +628,8 @@ MonoBehaviour:
   m_cardDlealer: {fileID: 519420030}
   m_cpuCards:
   - {fileID: 1381101335}
+  m_cardAtlas: {fileID: 4343727234628468602, guid: 5a1eb8324362512408258d62e298233f,
+    type: 2}
 --- !u!1 &1126019865
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +788,7 @@ PrefabInstance:
     - target: {fileID: 6103833327052219345, guid: 754d2d58143d48147bf1eed4d8e69d27,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 50
+      value: 70.6
       objectReference: {fileID: 0}
     - target: {fileID: 6103833327052219345, guid: 754d2d58143d48147bf1eed4d8e69d27,
         type: 3}
@@ -794,7 +798,7 @@ PrefabInstance:
     - target: {fileID: 6103833327052219345, guid: 754d2d58143d48147bf1eed4d8e69d27,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 108.250336
       objectReference: {fileID: 0}
     - target: {fileID: 6103833327052219345, guid: 754d2d58143d48147bf1eed4d8e69d27,
         type: 3}
@@ -1225,7 +1229,7 @@ PrefabInstance:
     - target: {fileID: 6103833327052219345, guid: 754d2d58143d48147bf1eed4d8e69d27,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -22.1
+      value: 64.6
       objectReference: {fileID: 0}
     - target: {fileID: 6103833327052219345, guid: 754d2d58143d48147bf1eed4d8e69d27,
         type: 3}
@@ -1235,7 +1239,7 @@ PrefabInstance:
     - target: {fileID: 6103833327052219345, guid: 754d2d58143d48147bf1eed4d8e69d27,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 91.1568
+      value: 119.20795
       objectReference: {fileID: 0}
     - target: {fileID: 6103833327052219345, guid: 754d2d58143d48147bf1eed4d8e69d27,
         type: 3}

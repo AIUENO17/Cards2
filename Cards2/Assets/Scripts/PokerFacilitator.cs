@@ -14,7 +14,6 @@ public class PokerFacilitator : MonoBehaviour
         Invalid = -1,
         Init,
         Deal,
-        Change,
         Judge,
         Result
     }
@@ -29,21 +28,14 @@ public class PokerFacilitator : MonoBehaviour
         {
             case GameState.Invalid:
                 m_gameState = GameState.Init;
-                    break;
+                break;
             case GameState.Init:
                 m_gameState = GameState.Deal;
                 break;
-            
 
-                
-                
-            case GameState.Change:
-                if (ChangeCount < 1)
-                {
-                    m_gameState = GameState.Judge;
-                }
-                break;
-         
+
+
+          
                 
 
             case GameState.Result:
